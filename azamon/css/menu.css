@@ -1,0 +1,55 @@
+ul {
+    text-align: center;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #000000;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display:inline-block;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 40px;
+    text-decoration: none;
+}
+
+li a:hover{
+
+    background-color:#f39c12;
+    transition: 0.5s;
+    color: #2c3e50;
+}
+
+ul li ul {
+
+    background-color: #34495e;
+    display:none;
+    position: absolute;
+    z-index: 100;
+}
+
+ul li:hover ul{
+    display:block;
+    transition: .5s;
+
+}
+li ul li {
+    display:block;
+}
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+.search-container {
+    float: left;
+    margin-left: 30px;
+    margin-top: 27px;
+    width: 30%;
+}

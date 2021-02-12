@@ -1,0 +1,71 @@
+body{
+    background-color: #15202b;
+    color: white;
+}
+* {box-sizing: border-box;}
+
+.container {
+    float: left;
+    position: relative;
+    width: 50%;
+    max-width: 200px;
+    margin: 32px;
+
+}
+.image {
+    display: block;
+    width: 200px;
+    height: 290px;
+}
+.image:hover {
+    -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
+    filter: blur(2px);
+    transition: 1s ease;
+}
+.book {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.8); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: 1s ease;
+    opacity:0;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+}
+.author {
+    position: absolute;
+    top:0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.8); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: 1s ease;
+    opacity:0;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+}
+.price {
+    position: absolute;
+    width: 100%;
+    margin-top: 5px;
+}
+.container:hover .book {
+    opacity: 1;
+}
+.container:hover .author {
+    opacity: 1;
+}
+.image2 {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: block;
+    width: 250px;
+    height: 390px;
+    float: left;
+}
